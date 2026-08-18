@@ -1,1 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Termos de Serviço | Central Nox</title>
+
+    <meta name="description" content="Termos de Serviço dos bots e serviços da Central Nox.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #08080d;
+            --card: #101018;
+            --card-light: #161622;
+            --purple: #8b5cf6;
+            --purple-light: #a78bfa;
+            --text: #f4f4f5;
+            --muted: #a1a1aa;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(circle at top, rgba(139, 92, 246, 0.12), transparent 35%),
+                var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(8, 8, 13, 0.85);
+            backdrop-filter: blur(15px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            max-width: 950px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--purple-light);
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            max-width: 950px;
+            margin: auto;
+            padding: 80px 25px 45px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 13px;
+            border-radius: 20px;
+            background: rgba(139, 92, 246, 0.12);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            color: var(--purple-light);
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 7vw, 65px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            max-width: 700px;
+            font-size: 17px;
+        }
+
+        .updated {
+            margin-top: 18px;
+            font-size: 13px !important;
+            color: #71717a !important;
+        }
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 10px 25px 80px;
+        }
+
+        .terms {
+            background: linear-gradient(
+                180deg,
+                rgba(255,255,255,0.025),
+                rgba(255,255,255,0.01)
+            );
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 45px;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 13px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 22px;
+            background: var(--purple);
+            border-radius: 5px;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 22px;
+            color: var(--muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #e4e4e7;
+        }
+
+        .notice {
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 35px 25px;
+            text-align: center;
+            color: #71717a;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: var(--purple-light);
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding-top: 55px;
+            }
+
+            .terms {
+                padding: 28px 22px;
+            }
+
+            nav {
+                padding: 16px 20px;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            CENTRAL <span>NOX</span>
+        </div>
+
+        <a href="#termos">Termos de Serviço</a>
+    </nav>
+</header>
+
+<div class="hero">
+
+    <div class="badge">
+        DOCUMENTO OFICIAL
+    </div>
+
+    <h1>
+        Termos de Serviço
+    </h1>
+
+    <p>
+        Estes Termos de Serviço estabelecem as regras e condições
+        para utilização dos bots, sistemas e demais serviços
+        disponibilizados pela Central Nox.
+    </p>
+
+    <p class="updated">
+        Última atualização: 18 de agosto de 2026
+    </p>
+
+</div>
+
+<main id="termos">
+
+    <div class="terms">
+
+        <section>
+            <h2>1. Aceitação dos Termos</h2>
+
+            <p>
+                Ao adicionar, acessar ou utilizar qualquer bot,
+                sistema ou serviço desenvolvido ou administrado
+                pela <strong>Central Nox</strong>, você concorda
+                com estes Termos de Serviço.
+            </p>
+
+            <p>
+                Caso não concorde com alguma das condições descritas
+                neste documento, você deverá interromper a utilização
+                dos nossos serviços.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>2. Sobre a Central Nox</h2>
+
+            <p>
+                A Central Nox desenvolve e administra bots e sistemas
+                destinados principalmente a servidores do Discord,
+                incluindo ferramentas de economia virtual,
+                administração, moderação, entretenimento,
+                utilidades e outras funcionalidades.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>3. Uso dos Bots</h2>
+
+            <p>
+                Ao utilizar nossos bots, você concorda em não utilizar
+                suas funcionalidades para atividades abusivas,
+                fraudulentas, ilegais ou que violem as regras
+                das plataformas utilizadas.
+            </p>
+
+            <p>É proibido, entre outras práticas:</p>
+
+            <ul>
+                <li>Explorar bugs ou falhas intencionalmente;</li>
+                <li>Tentar obter vantagens através de exploits;</li>
+                <li>Automatizar comandos de maneira abusiva;</li>
+                <li>Tentar prejudicar ou interromper nossos sistemas;</li>
+                <li>Tentar acessar informações ou áreas não autorizadas;</li>
+                <li>Utilizar os serviços para golpes ou atividades ilegais.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>4. Economia Virtual</h2>
+
+            <p>
+                Alguns bots da Central Nox podem possuir sistemas
+                de economia com moedas, saldo, carteira, banco,
+                rankings, recompensas ou outros recursos virtuais.
+            </p>
+
+            <p>
+                Salvo quando expressamente informado de outra forma,
+                moedas e itens existentes nesses sistemas são
+                <strong>virtuais</strong> e não representam dinheiro
+                real, criptomoedas ou investimentos.
+            </p>
+
+            <p>
+                A Central Nox poderá corrigir saldos ou remover itens
+                obtidos através de bugs, exploits, duplicações ou
+                outras formas consideradas indevidas.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>5. Disponibilidade</h2>
+
+            <p>
+                Não garantimos que os bots e serviços estarão
+                disponíveis de forma ininterrupta.
+            </p>
+
+            <p>
+                Serviços podem ficar temporariamente indisponíveis
+                devido a manutenção, atualizações, problemas técnicos,
+                alterações de infraestrutura ou fatores externos.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>6. Alterações e Atualizações</h2>
+
+            <p>
+                Funcionalidades dos bots poderão ser adicionadas,
+                modificadas ou removidas a qualquer momento para
+                melhorar os serviços, corrigir problemas ou adaptar
+                os sistemas a novas necessidades.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>7. Suspensão de Acesso</h2>
+
+            <p>
+                A Central Nox poderá limitar ou bloquear o acesso
+                de usuários ou servidores que violem estes termos,
+                abusem das funcionalidades ou prejudiquem
+                deliberadamente nossos sistemas.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>8. Dados e Privacidade</h2>
+
+            <p>
+                Para fornecer determinadas funcionalidades, nossos
+                bots podem processar identificadores técnicos
+                fornecidos pelo Discord, como ID do usuário,
+                ID do servidor, ID de canais e informações necessárias
+                para executar comandos e salvar configurações.
+            </p>
+
+            <p>
+                O tratamento dessas informações deverá seguir nossa
+                Política de Privacidade e as regras aplicáveis
+                da plataforma.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>9. Serviços de Terceiros</h2>
+
+            <p>
+                Alguns recursos podem depender de plataformas,
+                APIs ou serviços externos.
+            </p>
+
+            <p>
+                Alterações, indisponibilidades ou limitações impostas
+                por esses serviços podem afetar o funcionamento
+                de determinadas funcionalidades.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>10. Discord</h2>
+
+            <p>
+                A Central Nox é um projeto independente e não é
+                afiliada, patrocinada ou oficialmente administrada
+                pelo Discord.
+            </p>
+
+            <p>
+                O uso dos nossos bots também deve respeitar
+                os termos, políticas e diretrizes estabelecidos
+                pelo Discord.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>11. Alterações destes Termos</h2>
+
+            <p>
+                Estes Termos de Serviço poderão ser atualizados
+                quando necessário.
+            </p>
+
+            <p>
+                A versão publicada nesta página será considerada
+                a versão vigente dos termos.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>12. Contato e Suporte</h2>
+
+            <p>
+                Caso tenha dúvidas relacionadas aos nossos bots,
+                sistemas ou a estes Termos de Serviço, entre em
+                contato através dos canais oficiais de suporte
+                disponibilizados pela Central Nox.
+            </p>
+
+            <div class="notice">
+                Ao continuar utilizando os serviços da
+                <strong>Central Nox</strong>, você declara que
+                leu e concorda com estes Termos de Serviço.
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+    © 2026 <strong>Central Nox</strong> • Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
